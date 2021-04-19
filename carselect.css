@@ -1,0 +1,18 @@
+.car h1{
+	color:black;
+	background:yellow;
+	text-align:center;	
+}
+.car1 button:hover{
+	background-color:rgb(39, 206, 39);
+	color:black;
+}
+.car1 {
+    border:1px solid green;
+	margin: auto;
+	
+	width:300px;
+	border: 30px solid blue;
+	padding: 100px;
+	margin: 10%;
+}
