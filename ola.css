@@ -1,19 +1,35 @@
 @charset "ISO-8859-1";
-.table h1{
-	text-align:center;
-	color:red;
-	align-items:center;
-	font-size:30px;
-}
-
-.login h1{
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .login h1{
 	color:black;
-	background:yellow;	
+	background:yellow;
+	text-align:center;	
 }
-
-
-button{
-	color:blue;
-	background-color:#32a852;
+.login button{
+	color:lightgreen;
+	background:black;
+	margin:0 auto;
+}
+.login button:hover{
+	background-color:lightgreen;
+	color:black;
+}
+	
+.login form{
+	margin: auto;
+	
+	width:300px;
+	border: 30px solid blue;
+	padding: 100px;
+	margin: 10%;
+}
+.login input[type="text"]::placeholder{
+	text-align:center;
+}
+.login input[type="password"]::placeholder{
+	text-align: center;
 }
 
