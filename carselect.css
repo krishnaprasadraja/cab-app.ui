@@ -1,18 +1,63 @@
-.car h1{
-	color:black;
-	background:yellow;
-	text-align:center;	
-}
-.car1 button:hover{
-	background-color:rgb(39, 206, 39);
-	color:black;
-}
-.car1 {
-    border:1px solid green;
-	margin: auto;
+<!DOCTYPE html>
+<html>
+	<head>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	</head>
+<body>
+		<div class ="car">
+		<link rel ="stylesheet" href="carselect.css">
 	
-	width:300px;
-	border: 30px solid blue;
-	padding: 100px;
-	margin: 10%;
-}
+		<center>
+				<h1>CarTypes</h1>
+				</center>
+
+
+
+</div>
+<div class ="car1">
+		
+		<form action = "journydetails.html">
+				<label for="cartype">Choose a car:</label>
+				<select id="cartype">
+						<option value="volvo">Micro</option>
+						<option value="saab">Mini</option>
+						<option value="vw">Macro</option>
+						<option value="Mini" selected>Mini</option>
+					  </select>
+		<center>
+		<label for ="0">Enter The Distance In KM</label>
+		<input type="text" name="name" placeholder="Enter The Distance In KM" id="0"><br/><br>
+		
+		<label for ="1">Pickup Location</label>
+		<input type="text" name="PickupLocation" placeholder="Pickup Location" id="1" ><br/><br>
+		<label for ="2">Drop Location Location</label>
+		<input type="text" name="DropLocation" placeholder="Drop Location" id="2" ><br/><br>
+		<label for ="3">Journy Date</label>
+		<input type="date" name="JournyDate " placeholder="Journy Date" id="3" ><br/><br>
+		<label for ="4">Journy Time</label>
+		<input type="time" name="JournyTime" placeholder="Journy Time" id="4" ><br/><br>
+		<label for ="5">GST Percentage</label>
+		<input type="number" name="GSTpercentage" placeholder="GST Percentage" id="5" value="7" disabled ><br/><br>
+		
+		<button type="button" class="btn btn-outline-secondary">Calculate fare</button>
+		<button type="button" class="btn btn-outline-success">Continue</button>
+		<div class="price">	
+		<p class="pt-4">Price:<span id="6"></span></p>
+		</div>
+		
+		<form action="journydetails.html">
+				<input type="submit" name="submit" value="Submit">
+				<style>
+		
+						.buttonSubmit input, .buttonSubmit span {
+						
+						margin-left: -50px;
+						
+						}
+	
+
+		</center>
+		</form>
+	</div>
+</body>
+
