@@ -5,25 +5,38 @@
 .table h1{
     text-align:center;
     margin-bottom: 20px;
-	background-color:rgb(180, 240, 70);
+	background-color:rgb(53, 155, 202);
 	color:black;
 }
 .table table{
 	margin:0 auto;
 	height:200px;
-	width:300px;
-	text-align:center;
+	width:400px;
+    text-align:center;
+    color:black;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    background-color: rgba(255, 255, 255,0.65);
+    border-radius: 10%;
+    border: 15px solid rgb(139, 139, 179);
 }
 
-.button button{
+.button{
     margin:0 auto;
-    background-color:lightskyblue;
+    
     margin: auto;   
-    height: 30px;
-    width: 70px;
+    height: 40px;
+    width: 40px;
+    
 }
 .button button:hover{
     background-color: black;
     color:white;
+
 }
 
+body{
+	background: url("https://images.firstpost.com/wp-content/uploads/2020/06/fortuner-toyota-1280.jpg");
+	background-size: cover;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	
+	}
