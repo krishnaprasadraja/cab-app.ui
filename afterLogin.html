@@ -1,42 +1,48 @@
-*{
-    margin: 0;
-    padding: 0;
-  }
-.table h1{
-    text-align:center;
-    margin-bottom: 20px;
-	background-color:rgb(53, 155, 202);
-	color:black;
-}
-.table table{
-	margin:0 auto;
-	height:200px;
-	width:400px;
-    text-align:center;
-    color:black;
-    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-    background-color: rgba(255, 255, 255,0.65);
-    border-radius: 10%;
-    border: 15px solid rgb(139, 139, 179);
-}
+<!DOCTYPE html>
+<html>
 
-.button{
-    margin:0 auto;
-    
-    margin: auto;   
-    height: 40px;
-    width: 40px;
-    
-}
-.button button:hover{
-    background-color: black;
-    color:white;
 
-}
+<head>
 
-body{
-	background: url("https://images.firstpost.com/wp-content/uploads/2020/06/fortuner-toyota-1280.jpg");
-	background-size: cover;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+<link rel ="stylesheet" href="afterLogin.css">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+
+</head>
+<body>
+	<div class ="table">
+		<h1>Cab Types</h1>
+	<table border ="220">
 	
-	}
+		<thead>
+			<tr><th>Type</th> <th>price per km</th></tr>	
+		</thead>
+		<tbody>
+			<tr><td>Micro</td><td>Rs.10Rs/km</td></tr>
+			<tr><td>Macro</td><td>Rs.15Rs/km</td></tr>
+			<tr><td>Prime</td><td>Rs.20Rs/km</td></tr>
+			<tr>	<div class="button">
+					<form action="carselect.html">
+						<input type="submit" name="submit" value="Submit">
+						<style>
+				
+								.buttonSubmit input, .buttonSubmit span {
+								
+								margin-left: -50px;
+								
+								}
+								
+								</style>
+								
+								
+					</form>
+					</div></tr>
+		</tbody>
+		</table>
+		</br></br></br>
+	</div>
+
+</body>
+</html>
