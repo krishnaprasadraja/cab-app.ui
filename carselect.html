@@ -1,62 +1,102 @@
 <!DOCTYPE html>
 <html>
 	<head>
-			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+		<link rel ="stylesheet" href="carselect.css">
 	</head>
 <body>
-		<div class ="car">
-		<link rel ="stylesheet" href="carselect.css">
-	
+	<div class ="car">
 		<center>
-				<h1>CarTypes</h1>
-				</center>
-
-
-
-</div>
-<div class ="car1">
-		
-		<form action = "journydetails.html">
-				<label for="cartype">Choose a car:</label>
-				<select id="cartype">
-						<option value="volvo">Micro</option>
-						<option value="saab">Mini</option>
-						<option value="vw">Macro</option>
-						<option value="Mini" selected>Mini</option>
-					  </select>
-		<center>
-		<label for ="0">Enter The Distance In KM</label>
-		<input type="text" name="name" placeholder="Enter The Distance In KM" id="0"><br/><br>
-		
-		<label for ="1">Pickup Location</label>
-		<input type="text" name="PickupLocation" placeholder="Pickup Location" id="1" ><br/><br>
-		<label for ="2">Drop Location Location</label>
-		<input type="text" name="DropLocation" placeholder="Drop Location" id="2" ><br/><br>
-		<label for ="3">Journy Date</label>
-		<input type="date" name="JournyDate " placeholder="Journy Date" id="3" ><br/><br>
-		<label for ="4">Journy Time</label>
-		<input type="time" name="JournyTime" placeholder="Journy Time" id="4" ><br/><br>
-		<label for ="5">GST Percentage</label>
-		<input type="number" name="GSTpercentage" placeholder="GST Percentage" id="5" value="7" disabled ><br/><br>
-		
-		<button type="button" class="btn btn-outline-secondary">Calculate fare</button>
-		<button type="button" class="btn btn-outline-success">Continue</button>
-		<div class="price">	
-		<p class="pt-4">Price:<span id="6"></span></p>
-		</div>
-		
-		<form action="journydetails.html">
-				<input type="submit" name="submit" value="Submit">
-				<style>
-		
-						.buttonSubmit input, .buttonSubmit span {
-						
-						margin-left: -50px;
-						
-						}
-	
-
+			<h1>CarTypes</h1>
 		</center>
+	</div>
+	<div class ="car1">	
+		<!-- <form onsubmit="bill()"> -->
+			<label for="cartype">Choose a car:</label>
+			<select id="cartype">
+				<option value="Micro">Micro</option>
+				<option value="Mini">Mini</option>
+				<option value="Macro">Macro</option>
+			</select>
+			<center>
+
+
+				<!-- total km -->
+				<label for ="DistanceInKm">Enter The Distance In KM</label>
+				<input type="text" name="DistanceInKm" placeholder="Enter The Distance In KM" id="DistanceInKm"><br/><br>		
+
+
+				<!-- pickup location -->
+				<label for ="PickupLocation">Pickup Location</label>
+				<input type="text" name="PickupLocation" placeholder="Pickup Location" id="PickupLocation" ><br/><br>
+
+
+				<!-- droplocation -->
+				<label for ="DropLocation">Drop Location Location</label>
+				<input type="text" name="DropLocation" placeholder="Drop Location" id="DropLocation" ><br/><br>
+
+
+
+				<!-- For JournyDate -->
+				<label for ="JournyDate">Journy Date</label>
+				<input type="date" name="JournyDate " placeholder="Journy Date" id="JournyDate" ><br/><br>
+
+
+
+				<!-- For DateofBirth -->
+				<label for ="DOB">DOB</label>
+				<input type="date" name="DOB" placeholder="DOB" id="DOB" ><br/><br>
+
+
+
+				<!-- For journyTime -->
+				<label for ="time">journy time</label>
+				<input type="time" name="JournyTime" placeholder="Journy Time" id="JournyTime" ><br/><br>
+
+
+				<!-- for gst percentage  -->
+				<label for ="GSTpercentage">GST Percentage</label>
+				<input type="number" name="GSTpercentage" placeholder="GST Percentage" id="GSTpercentage" value="7" disabled ><br/><br>		
+			
+				<!-- for senior citizen discount -->
+				<!-- <div class ="seniorcitizen">			
+						<label for="seniorcitizen">SeniorCitizen:</label>
+							<select id="seniorcitizen">
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+								
+							</select>
+					</div>	<br/><br>	 -->
+
+
+
+					<div class="seniorcitizen">	 
+							<p class="pt-4"># SeniorCitizen Age Should >=60 #<span id="seniorcitizen"></span></p> <br/><br>
+
+
+
+
+               <!-- calculate fare -->
+				<button type="button" value="6" id="Button" class="btn btn-outline-secondary">Calculate fare</button>		
+				
+				<!-- Display price -->
+				<div class="price">	
+					<p class="pt-4">Price:<span id="price"></span></p>
+				</div><br/><br>
+
+				
+				<!-- </div> -->
+				 <!-- <div class="bill">
+					<label for="Bill" id="Bill"></label><br></br>
+					<label for="Gst" id="Gst"></label><br></br>
+			
+				</div> -->
+			</center>
+		  <!-- </form>		  -->
+		<form onsubmit="submitvalue()" action="journydetails.html">			
+			<input type="submit" id="Submit" name="Submit" value="Submit">
 		</form>
 	</div>
+	<script src="carselect.js"></script>
 </body>
+</html>
